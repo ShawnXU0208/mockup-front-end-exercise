@@ -1,0 +1,366 @@
+html body{
+	padding: 0;
+	margin: 0;
+}
+
+/***********************************************************/
+/* Style for the 1st section(header)*/
+/***********************************************************/
+
+#section1-header{
+	position: relative;
+	width: 100%;
+}
+
+
+#section1-header .logo{
+	width: 15%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#section1-header .banner-img{
+	width: 100%;
+}
+
+#section1-header .navbar{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#section1-header .dropdown-menu{
+	background: transparent;
+	border: none;
+}
+
+#section1-header .search{
+	display: none;  /* Hide the search button*/
+}
+
+
+/***********************************************************/
+/* Style for the 2ed section(introduction)*/
+/***********************************************************/
+#section2-introduction{
+	text-align: center;
+	width: 95%;
+	margin: auto;
+	border-bottom: 1px solid lightgrey;
+	padding: 20px;
+} 
+
+#section2-introduction .search-bar *{
+	display: inline;
+}
+
+
+/***********************************************************/
+/* Style for the 3rd section(products)*/
+/***********************************************************/
+#section3-products .flex-container{
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#section3-products .product-frame{
+	padding: 20px;
+	border: 1px solid grey;
+	height: 400px;
+	width: 350px;
+	margin-top: 20px;
+}
+
+
+/*==================================================*/
+/* style for elements within one product frame */
+#section3-products .product-frame img{
+	width: 100%;
+	margin: auto;
+	height: 220px;
+}
+
+#section3-products .product-details{
+	margin-top: 10px;
+}
+
+#section3-products .product-details p{
+	display: inline-block;
+	width: 68%;
+	float: left;
+}
+
+#section3-products .product-details button{
+	display: inline-block;
+	width: 28%;
+	background: none;
+	border: 1px solid lightgrey;
+	padding: 25px;
+	float: right;
+}
+/*==================================================*/
+
+
+#section3-products .banner-ad{
+	max-height: 200px;
+	max-width: 580px;
+	border: 1px solid grey;
+	padding: 20px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#section3-products .banner-ad img{
+	max-width: 100%;
+}
+
+#section3-products .swap-button{
+	display: none;
+}
+
+#section3-products .dots{
+	display: none;
+}
+
+/***********************************************************/
+/* Style for the 4th section(footer)*/
+/***********************************************************/
+#section4-footer, #section4-footer *{
+	background-color: #606060;
+	margin: 0;
+	padding: 0;
+}
+
+#section4-footer .container-fluid{
+	width: 60%;
+	padding-bottom: 50px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#section4-footer .btn-group-vertical .btn{
+	color: lightgrey;
+}
+
+
+/***********************************************************/
+/* when resizing into small size(<768px) */
+/***********************************************************/
+@media screen and (max-width: 768px){
+
+	/***********************************************************/
+	/***********************************************************/
+	/***********************************************************/
+	/* alter section 1 */
+	#section1-header .logo{
+		/* center align logo image */
+		width: 20%;
+		left: 40%;
+		top: 10px;
+	}
+
+	#section1-header .navbar{
+		/* left align collapsed nav button */
+		left: 0px;
+	}
+
+	#section1-header .search{
+		/* set a search button on the right side of page */
+		display: block;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 10px;
+		font-size: 25px;
+	}
+
+	#section1-header .navbar-collapse{
+		background-color: lightgrey;
+	}
+
+	/* styles for modal search pane */
+	/*==================================================*/
+	#section1-header .modal-content{
+		width: 75%;
+		margin: auto;
+		margin-top: 20%;
+		padding: 5px;
+		border-radius: 0px;
+	}
+
+	#section1-header .modal-content input{
+		display: inline-block;
+		width: 70%;
+		margin: 0px;
+		height: 30px;
+	}
+
+	#section1-header .modal-content button{
+		display: inline-block;
+		width: 28%;
+		margin: 0px;
+		background-color: #4198f4;
+		text-align: center;
+		color: white;
+		font-size: 10px;
+		height: 30px;
+		line-height: 30px;
+		border: none;
+		cursor: pointer;
+	}
+	/*==================================================*/
+	/***********************************************************/
+	/***********************************************************/
+	/***********************************************************/
+	/* alter section 2 */
+	#section2-introduction .search-bar{
+		display: none;
+	}
+	/***********************************************************/
+	/***********************************************************/
+	/***********************************************************/
+	/* alter section 3 */
+	#section3-products .flex-container{
+		/* only display one product on page */
+		display: block;
+		position: relative;
+		width: 90%;
+		height: 450px;
+		overflow: hidden;
+	}
+
+	#section3-products .flex-container .product-frame{
+		display: inline-block;
+		visibility: hidden; /* hide all products at first*/
+		margin: auto;
+		width: 80%;
+		margin-top: 20px;
+		position: absolute;
+	}
+
+	#section3-products .flex-container .active, #section3-products .flex-container .last-active{
+		left: 10%;
+		visibility: visible;
+	}
+
+	/*==================================================*/
+	/* styles for control buttons(next and prev) */
+	#section3-products .swap-button{
+		display: block;
+	}
+
+	#section3-products .swap-button *{
+		position: absolute;
+		top: 50%;
+	    color: black;
+	    font-weight: bold;
+	    font-size: 18px;
+	    cursor: pointer;
+	    padding: 16px;
+	    border-radius: 8px;
+	}
+
+	#section3-products .swap-button .next{
+		right: 0px;
+	}
+
+	#section3-products .swap-button .prev{
+		left: 0px;
+	}
+
+	.prev:hover, .next:hover {
+	    background-color: lightgrey;
+	}
+	/*==================================================*/
+
+	/*==================================================*/
+	/* styles for dot indicators */
+	.dot{
+	    cursor: pointer;
+	    height: 15px;
+	    width: 15px;
+	    margin: 0 2px;
+	    background-color: lightgrey;
+	    border-radius: 50%;
+	    display: inline-block;
+	    transition: background-color 0.6s ease;
+	}
+
+	.dot-nav .active, .dot:hover {
+	    background-color: #717171;
+	}
+	/*==================================================*/
+
+	/***********************************************************/
+	/***********************************************************/
+	/***********************************************************/
+
+}
+
+
+@media screen and (max-width: 576px){
+	/* alter section 4 */
+	#section4-footer .container-fluid{
+		width: 100%;
+	}
+
+	#section4-footer .link-list{
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+		border-top: 1px solid black;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		padding-left: 10%;
+	}
+
+	#section4-footer .collapse-btn{
+		/* display collapsed button*/
+		display: block;
+		color: black;
+		font-weight: bold;
+	}
+
+	#section4-footer .not-collapsed{ 
+		/* hide old titles */
+		display: none;  
+	}
+	/***********************************************************/
+	/***********************************************************/
+	/***********************************************************/
+}
+
+/***********************************************************/
+/* when resizing into large size(>768px) */
+/***********************************************************/
+@media screen and (min-width: 576px){
+	#section4-footer .not-collapsed{
+		display: block;
+		color: black;
+		font-weight: bold;
+	}
+
+	#section4-footer .collapse-btn{
+		display: none;
+	}
+
+	#section4-footer .btn-group-vertical{
+		display: block;
+	}
+
+	#section4-footer .btn-group-vertical *{
+		text-align: left;
+	}
+
+}	
+
+
+
+

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page Title</title>
+	<link rel = 'stylesheet' type = 'text/css' href = 'mystyle.css' />
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Section 1 -->
+	<!--***************************************************************************************************************************************-->
+	<div id = "section1-header">
+		<img class = 'banner-img' src = 'imgs/full_banner.jpg' alt = 'FULL BANNER AD' />
+		<a class = 'logo' href = "#">
+		<img src = 'imgs/logo.png' alt = 'logo' />
+		</a>
+
+		<nav class = "navbar navbar-expand-md navbar-light">
+
+			<!-- Collapsible Button-->
+			<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#my-navbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Navbar Links -->
+			<div class = "collapse navbar-collapse" id = "my-navbar">
+			    <ul class = "navbar-nav">
+
+			        <li class = "nav-item">
+			            <a class = "nav-link" href = "#">Home</a>
+			        </li>
+
+			        <li class = "nav-item">
+			            <a class = "nav-link" href = "#">About Us</a>
+			        </li>
+
+			        <li class = "nav-item dropdown">
+			            <a class = "nav-link dropdown-toggle" href = "#" data-toggle = "dropdown">Products</a>
+
+			            <div class = "dropdown-menu">
+			                <a class = "dropdown-item" href = "#">Category</a>
+			                <a class = "dropdown-item" href = "#">Category</a>
+			                <a class = "dropdown-item" href = "#">Category</a>
+			                <a class = "dropdown-item" href = "#">Category</a>
+			            </div>
+			        </li>
+
+			        <li class = "nav-item">
+			    	    <a class = "nav-link" href = "#">Contact Us</a>
+			        </li>
+			    </ul>
+			</div>
+		</nav>
+
+		<!-- The search button for small device -->
+		<button type = "button" class = "search" data-toggle = "modal" data-target = "#hidden-search-bar"><i class="fa fa-search"></i></button>
+		<div id = "hidden-search-bar" class = "modal fade" role = "dialog">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<form>
+						<input type = "text" name = "search" placeholder = "looking for...">
+						<button type = "submit">SEARCH</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Section 2 -->
+	<!--***************************************************************************************************************************************-->
+	<div id = "section2-introduction">
+		<h1>Welcome</h1>
+		<p>Lorem ipsum dolor sit amet, vim habeo epicuri eu, ad melius mentitum per, hinc falli minimum id est. Vis appareat definitionem ea, harum possit vis eu. Nec ad dicant apeirian. Id integre scriptorem vix. His an eius probo interesset. Mel id omnis patrioque scriptorem.</p>
+		<div class = "search-bar">
+			<p>search products: </p>
+			<form>
+				<input type = "text" name = "search">
+				<button type = "submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- Section 3 -->
+	<!--***************************************************************************************************************************************-->
+	<div id = "section3-products">
+		<h2>Featured Products</h2>
+		<!-- display products by flex-box -->
+		<div class = "flex-container">
+
+				<!-- individual prodcut -->
+				<div class = "product-frame">
+					<p>Product 1 description</p>
+					<img src = 'imgs/product-1.jpg' alt = 'pancake'/>
+					<div class = "product-details">
+						<button>view</button>
+						<p>Lorem ipsum dolor sit amet, vim habeo epicuri eu, ad melius mentitum per, hinc falli minimum id est.</p>
+					</div>
+				</div>
+		
+				<!-- individual prodcut -->
+				<div class = "product-frame">
+					<p>Product 2 description</p>
+					<img src = 'imgs/product-1.jpg' alt = 'pancake'/>
+					<div class = "product-details">
+						<button>view</button>
+						<p>Lorem ipsum dolor sit amet, vim habeo epicuri eu, ad melius mentitum per, hinc falli minimum id est.</p>
+					</div>
+				</div>
+			
+				<!-- individual prodcut -->
+				<div class = "product-frame">
+					<p>Product 3 description</p>
+					<img src = 'imgs/product-1.jpg' alt = 'pancake'/>
+					<div class = "product-details">
+						<button>view</button>
+						<p>Lorem ipsum dolor sit amet, vim habeo epicuri eu, ad melius mentitum per, hinc falli minimum id est.</p>
+					</div>
+				</div>
+
+				<!-- individual prodcut -->
+				<div class = "product-frame">
+					<p>Product 4 description</p>
+					<img src = 'imgs/product-1.jpg' alt = 'pancake'/>
+					<div class = "product-details">
+						<button>view</button>
+						<p>Lorem ipsum dolor sit amet, vim habeo epicuri eu, ad melius mentitum per, hinc falli minimum id est.</p>
+					</div>
+				</div>
+		
+				<!-- individual prodcut -->
+				<div class = "product-frame">
+					<p>Product 5 description</p>
+					<img src = 'imgs/product-1.jpg' alt = 'pancake'/>
+					<div class = "product-details">
+						<button>view</button>
+						<p>Lorem ipsum dolor sit amet, vim habeo epicuri eu, ad melius mentitum per, hinc falli minimum id est.</p>
+					</div>
+				</div>
+		
+				<!-- individual prodcut -->
+				<div class = "product-frame">
+					<p>Product 6 description</p>
+					<img src = 'imgs/product-1.jpg' alt = 'pancake'/>
+					<div class = "product-details">
+						<button>view</button>
+						<p>Lorem ipsum dolor sit amet, vim habeo epicuri eu, ad melius mentitum per, hinc falli minimum id est.</p>
+					</div>
+				</div>
+	
+			<!-- buttons for changing between products for small devices -->
+			<div class = "swap-button">
+				<a class = "prev" onclick="changeSlide(-1)">&#10094;</a>
+				<a class = "next" onclick="changeSlide(1)">&#10095;</a>
+			</div>
+		</div>
+
+		<!-- dots indicators for small devices -->
+		<div style="text-align:center" class = "dot-nav">
+		    <span class="dot" onclick="currentSlide(1)"></span> 
+		    <span class="dot" onclick="currentSlide(2)"></span> 
+		    <span class="dot" onclick="currentSlide(3)"></span> 
+		    <span class="dot" onclick="currentSlide(4)"></span> 
+		    <span class="dot" onclick="currentSlide(5)"></span> 
+		    <span class="dot" onclick="currentSlide(6)"></span> 
+		</div>
+
+		<!-- display 2 banner ad by flex-box -->
+		<div class = "flex-container">
+			<div class = "banner-ad">
+				<img class = "thunmbnail" src = "imgs/banner_ad.jpg" alt = 'coffee house'/>
+			</div>
+
+			<div class = "banner-ad">
+				<img class = "thunmbnail" src = "imgs/banner_ad.jpg" alt = 'coffee house'/>
+			</div>			
+		</div>
+		
+	</div>
+
+	<!-- Section 4 -->
+	<!--***************************************************************************************************************************************-->
+	<div id = "section4-footer" class = "link-pane container-fluid">
+		<!-- display foot links by bootstrap grids -->
+		<div class = "container-fluid">
+			<div class = "row">
+				<!-- Home links list -->
+				<div class = "col-md-3 col-sm-6 col-12 link-list">
+					<a class = "cateogry-title not-collapsed" href = "#">Home</a> 
+
+					<!-- collapsed button for small device -->
+					<button type = "button" class = "btn dropdown-toggle collapse-btn" data-toggle = "collapse" data-target = "#btn-group-1">Home</button>
+					<!-- links list -->
+					<div class = "btn-group-vertical collapse show" id = "btn-group-1">
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+					</div>
+				</div>
+
+				<!-- Products links list -->
+				<div class = "col-md-3 col-sm-6 col-12 link-list">
+					<a class = "cateogry-title not-collapsed" href = "#">Products</a>
+
+					<!-- collapsed button for small device -->
+					<button type = "button" class = "btn dropdown-toggle collapse-btn" data-toggle = "collapse" data-target = "#btn-group-2">Products</button>
+					<!-- links list -->
+					<div class = "btn-group-vertical collapse show" id = "btn-group-2">
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+					</div>
+				</div>
+
+				<!-- Services links list -->
+				<div class = "col-md-3 col-sm-6 col-12 link-list">
+					<a class = "cateogry-title not-collapsed" href = "#">Services</a>
+
+					<!-- collapsed button for small device -->
+					<button type = "button" class = "btn dropdown-toggle collapse-btn" data-toggle = "collapse" data-target = "#btn-group-3">Services</button>
+					<!-- links list -->
+					<div class = "btn-group-vertical collapse show" id = "btn-group-3">
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+					</div>
+				</div>
+
+				<!-- Help links list -->
+				<div class = "col-md-3 col-sm-6 col-12 link-list">
+					<a class = "cateogry-title not-collapsed" href = "#">Help</a>
+
+					<!-- collapsed button for small device -->
+					<button type = "button" class = "btn dropdown-toggle collapse-btn" data-toggle = "collapse" data-target = "#btn-group-4">Help</button>
+					<!-- links list -->
+					<div class = "btn-group-vertical collapse show" id = "btn-group-4">
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+						<button type = "button" class = "btn">menu item</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	//show the active product for small device
+	var slideIndex = 1; //default active index is 1
+	var lastIndex;
+	var slides = document.getElementsByClassName("product-frame");
+	showSlide(slideIndex); 
+
+	function changeSlide(n){
+		// the function to execute when control buttons(next, prev) is clicked
+		if(typeof lastIndex != 'undefined'){ //check if it is the first time when a button being clicked
+			//remove the "last-active" class name
+			slides[lastIndex-1].className = slides[lastIndex-1].className.replace(" last-active", "");
+		}
+
+		lastIndex = slideIndex;
+		//make the current 'active' product 'last-active'
+		slides[lastIndex-1].className = slides[lastIndex-1].className.replace(" active", " last-active");
+
+		slideIndex += n;
+		showSlide(slideIndex);
+	}
+
+	function showSlide(n){
+		// the function to execute to show a product
+		var i;
+		var dots = document.getElementsByClassName("dot"); //get dots indicators elements, 
+
+		//go back to the first product when it reachs the last product
+		if (n > slides.length){
+			slideIndex = 1;
+		}
+
+		if (n < 1){
+			slideIndex = slides.length;
+		}
+		
+		// remove 'active' class name from all dot indicators
+		for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		}
+ 
+		slides[slideIndex-1].className += " active"; 
+		dots[slideIndex-1].className += " active";
+
+	}
+
+
+	// animations when changing between produt slides
+	$(document).ready(function(){
+
+		// during shwoing the next prodcut slide
+		$('.next').click(function(){
+			// prevent starting a new animation when a animation is still in process
+			if ($(':animated').length) {
+		        return false;
+		    }
+
+			$('.product-frame.active').css({"left":"100%", "visibility":"visible"});
+
+			$('.product-frame.last-active').animate({
+				left: '-90%',
+				//visibility: 'hidden'
+			}, 2000);
+
+			$('.product-frame.active').animate({
+				left: '10%',
+				visibility: 'visible'
+			}, 2000, function(){
+				//callback functions, for keeping the last frame of animation
+				$('.product-frame.active').css({"left":"10%", "visibility":"visible"});
+				$('.product-frame.last-active').css({"left":"-90%", "visibility":"visible"});
+			});
+		});
+
+		// during shwoing the previous prodcut slide
+		$('.prev').click(function(){
+			// prevent starting a new animation when a animation is still in process
+			if ($(':animated').length) {
+		        return false;
+		    }
+
+			$('.product-frame.active').css({"left":"-90%", "visibility":"visible"});
+
+			$('.product-frame.last-active').animate({
+				left: '110%',
+				//visibility: 'hidden'
+			}, 2000);
+
+			$('.product-frame.active').animate({
+				left: '10%',
+				visibility: 'visible'
+			}, 2000, function(){
+				//callback functions, for keeping the last frame of animation
+				$('.product-frame.active').css({"left":"10%", "visibility":"visible"});
+				$('.product-frame.last-active').css({"left":"110%", "visibility":"visible"});
+			});
+		});
+	});
+	
+</script>
+
+</html>
